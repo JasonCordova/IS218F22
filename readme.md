@@ -16,4 +16,14 @@ setup.py is a config file for pytest
 
 
 
-Heroku App: https://jlc23-flaskapp.herokuapp.com/
+Heroku Dev App: https://jlc23-is218-dev.herokuapp.com
+Heroku Prod App: https://jlc23-is218-prodi.herokuapp.com
+
+Development Workflow Badge:
+
+[![Development Workflow](https://github.com/JasonCordova/IS218F22/actions/workflows/dev.yml/badge.svg)](https://github.com/JasonCordova/IS218F22/actions/workflows/dev.yml)
+
+Production Workflow Badge:
+
+[![Production Workflow](https://github.com/JasonCordova/IS218F22/actions/workflows/prod.yml/badge.svg)](https://github.com/JasonCordova/IS218F22/actions/workflows/prod.yml)
+
