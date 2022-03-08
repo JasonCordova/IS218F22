@@ -1,4 +1,38 @@
 {% extends "base.html" %}
 {% block content %}
-    Continuous Integration and Deployment
+    <div class="container mt-5">
+        <h2>Python & Flask: Explanation</h2>
+        <br>
+        <div class="container">
+
+            <h3>GitHub Actions</h3>
+            <div style="font-size: 14px;">We have our project setup to use Github Actions on our IDE, allowing to commit, make new branches, and edit our source code all at once. This is much easier than doing it all via a terminal as theres a GUI that has options available for easy use.</div>
+
+            <br>
+            <h3>Use of a Development Server</h3>
+            <div style="font-size: 14px;">Using a development server is much safer when working on a project. In this project, we are utilizing both a development and a production branch in Heroku, where production is the finalized version of the project and the development branch is where we can conclude tests on new features or changes in code. This comes in handy when handling errors, especially when you do not want to mess up your finalized version. If there is a version that is completely unfunction on your development branch, you're always gonna have a working version on your production!</div>
+
+            <br>
+            <blockquote class="blockquote">
+
+                <p>"It's okay for IDE users set up their own project files and use them for individual development. However it's essential to have a master build that is usable on a server and runnable from other scripts."</p>
+                <footer class="blockquote-footer">Martin Fowler</footer>
+
+            </blockquote>
+
+            <br>
+
+            <h3>From Master to Production</h3>
+            <div style="font-size: 14px;">We utilize a continuous integration and deployment method using our .YML files that automatically upload to Heroku and back. With the integration system, we are automatically seeing our changes come to life in real time when running on localhost. However, when it comes time to push the code to our master branch, we use continuous deployment to our production and development branch on Heroku. Additionally, these autonomous features make it much more easy to debug code with the help of a production and dev branch. Similarly, our Docker utilized this same technology when it comes to deploying an image when our master branch is updated. This is done simply by the blueprints we use in Flask as previously talked about to produce a smooth flow of programming without the hassle.</div>
+
+            <br>
+            <blockquote class="blockquote">
+
+                <p>"Continuous Integrations doesn't get rid of bugs, but it does make them dramatically easier to find and remove. In this respect it's rather like self-testing code."</p>
+                <footer class="blockquote-footer">Martin Fowler</footer>
+
+            </blockquote>
+
+        </div>
+    </div>
 {% endblock %}

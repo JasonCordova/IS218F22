@@ -5,32 +5,22 @@
         <br>
         <div class="container">
 
-            <h3>Branches</h3>
-            <div style="font-size: 14px;">In Git, branches serve the purpose as snapshots to any changes made in your development process. If you're familiar with the C++ programming language, branches are almost similar to pointers, where the initial reference or 'main branch' is not altered when you make changes to a branch. Branches essentially make a new working directory with new commits recording the project history.</div>
+            <h3>Testing with Pytest</h3>
+            <div style="font-size: 14px;">We were taught to use Pytest whenever we implement any functions or objects, so in this project, we utilized it for a majority of scenarios that involve getting the URL for our simple_pages_test.py.
+
+            <br><br>For example, we go through a variety of tests to see if the main menu links are present in test_request_main_menu_links, if our index page works on test_request_index, if any page is not found in our test_request_page_not_found, and so forth for our other pages in simple_pages. For most of these, we are checking to see if the status codes in the tests are 200, which means OK. Any status code of 404, means NOT FOUND.</div>
 
             <br>
 
-            <h3>Merge</h3>
-            <div style="font-size: 14px;">Merging in Git allows different branches of development to essentially become one. For example, if one feature was developed in our 'Feature 1' branch and another in our 'Feature 2' branch, we can essentially merge these two Feature branches to one another or make a new branch that implements both features.</div>
+            <h3>Link to the project on Github Link to Flask, Flask Blueprint, Flask Testing</h3>
+            <div style="font-size: 14px;">Not sure what you meant by here since this was vaguely discussed, so I'm going to explain instead.
+
+            <br>
+            <br>Flask uses a concept of blueprints for making applications and supporting common patterns. These blueprints allow to simplify the process for how some large applications work, which provide a variety of benefits such as: instantiate application objects, allowing for operations to be registered on an application multiple times without difficulty, but the only issue is that you cannot unregister a blueprint without having to destroy the whole application. Similarly, testing with Flask uses errorhandlers just like the Flask application object, allowing us to make custom error page that follow Blueprints just like how we used in this project, hence why we use Pytest.
+            </div>
 
             <br>
 
-            <h3>Commit</h3>
-            <div style="font-size: 14px;">Git’s commit feature allows us to keep track of our progress of our entire repository, serving almost as the actual ‘snapshot’ portion of our project. They are usually sent with a brief explanation or reason for the changes before being pushed to the repository, where the repository then implements them.
-</div>
-
-            <br>
-
-            <h3>Tags</h3>
-            <div style="font-size: 14px;">Tags are used in Git as reference points to a specific point in that Git's history, but also assist in keeping any commits in a project organized. Oftentimes, this feature is used to refer to specific release points or versions of a project.</div>
-
-            <br>
-
-            <h3>Repositories</h3>
-            <div style="font-size: 14px;">In general, repositories are areas that store or maintain data. In Git, they are very similar to that. Git repositories (or repo for short) are used to hold a variety of data and files that are later used to compose a project. They also have the capability to track and save the entire history of changes made to any files within the ongoing project.</div>
-
-            <br>
-
-        </div>
+            </div>
     </div>
 {% endblock %}
