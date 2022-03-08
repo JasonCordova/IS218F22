@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel" style="background-color: black; height: 400px; color: white;">
+
+  <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    </div>
+
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner h-100 d-flex align-items-center" align="center">
+    <div class="carousel-item active">
+        <div style="font-weight: bold; font-size: 40px;" class="d-block w-100">Github</div>
+        <div style="font-size: 18px;" class="d-block w-100">Learn more about Github and its components by clicking this slide.</div>
+        <a class="btn btn-primary mt-4" href="{{ url_for('simple_pages.show', page="git")}}" role="button">LEARN MORE</a>
+    </div>
+    <div class="carousel-item">
+      <div style="font-weight: bold; font-size: 40px;" class="d-block w-100">Docker</div>
+        <div style="font-size: 18px;" class="d-block w-100">Learn more about Docker's purpose and other components used on this project.</div>
+        <a class="btn btn-primary mt-4" href="{{ url_for('simple_pages.show', page="docker")}}" role="button">LEARN MORE</a>
+    </div>
+    <div class="carousel-item">
+      <div style="font-weight: bold; font-size: 40px;" class="d-block w-100">Python & Flask</div>
+        <div style="font-size: 18px;" class="d-block w-100">Learn more about our use of Python to test and Flask's framework.</div>
+        <a class="btn btn-primary mt-4" href="{{ url_for('simple_pages.show', page="pythonflask")}}" role="button">LEARN MORE</a>
+    </div>
+      <div class="carousel-item">
+        <div style="font-weight: bold; font-size: 40px;" class="d-block w-100">Integration & Deployment</div>
+          <div style="font-size: 18px;" class="d-block w-100">Learn more about our setup process from automatic integration to automatic deployment.</div>
+          <a class="btn btn-primary mt-4" href="{{ url_for('simple_pages.show', page="continuous")}}" role="button">LEARN MORE</a>
+    </div>
+  </div>
+
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+    <div class="container-fluid text-center mt-5">
+    Index Page
+    </div>
+{% endblock %}
+
