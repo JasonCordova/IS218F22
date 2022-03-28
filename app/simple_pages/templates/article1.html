@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="container mt-5">
+        <h2>Pylint & More</h2>
+        <br>
+        <div class="container">
+
+            <h3>OOP Definitions</h3>
+
+            <ul style="font-size: 14px;">
+
+                <br><li><b>Instantiation </b>is the process of calling a constructor (blueprint) of a class in order to create an instance of that class, otherwise known as an object.</li><br>
+
+                <li><b>Objects </b>are instances or members of a class, which pass through a variety of fields such as identity, behavior, states, methods, and attributes. An example of an object could be a car, which could have different variables such as manufacturer, color, speed and methods such as drive and brake.</li><br>
+
+                <li><b>Classes </b>are user-defined ‘templates’ or ‘blueprints’ that can be used to create objects and define object data types and methods, as well as any other content of the object that belongs to it.</li><br>
+
+                <li><b>Namespaces </b>are declared regions that provide a method to prevent naming conflicts in projects. Any symbol or variable declared in a namespace block is first placed in a named scope that further prevents them from being mistaken for identical variables in other scopes.</li><br>
+
+                <li><b>Constructors </b>are special methods in classes that are used to initialize objects and can be used to set values in object attributes. Constructors are also usually called when an object or an instance of a class is created.</li><br>
+
+                <li><b>Fixtures </b>are functions which run before each and every test function that it is applied to. In Pytest, they define the steps and data that constitute the arrange phase of a test and set up a set of resources beforehand.</li><br>
+
+                <li><b>Type hints </b>are a form of code that is typically used to specify the datatype of a value. Primarily for documentation purposes, they are used to catch errors in functions, constructors, and much more.</li><br>
+
+                <li><b>Type casting </b>is the process of changing or converting one primitive data type to another data type.</li><br>
+
+                <li><b>Unit tests </b>are testing methods in software in which individual units of code undergo a variety of different requests and tests to determine whether they are functional and efficient.</li><br>
+
+                <li><b>Static </b>is a keyword typically used on variables, methods, blocks, and classes in order to make that particular member belong to a type itself, rather than an instance of its type.</li><br>
+
+                <li><b>Instance methods </b>are methods that belong to instances of a class, not the class overall. They require an object to be created before it can be called.</li><br>
+
+                <li><b>Instance properties </b>otherwise known as instance variables, are used by objects to store their states and other values. These would typically go outside any methods or functions in an object.</li><br>
+
+                <li><b>Static methods </b>are a form of methods that can be accessed before any objects of its class are created, an example of this is the main( ) method in C++ and Java programs.</li><br>
+
+                <li><b>Static properties </b>act more like a global variable or function in the sense that they can be called in any and every scope.</li><br>
+
+                <li><b>Encapsulation </b>is the process in which code, methods, and data are wrapped together in a single unit. This happens when making an instance of a class.</li><br>
+
+                <li><b>Inheritance </b>is the concept in which one class can inherit or acquire the properties, values, and methods from another class.</li><br>
+
+                <li><b>Polymorphism </b>occurs when classes are related to each other by inheritance, it allows us to perform actions in different ways through overloading and overriding functions. An example would be an animal class having the function eat(), which would pass through every kind of animal.</li><br>
+
+                <li><b>Abstraction </b>is the process of hiding unnecessary details from the user and only showing the necessary characteristics to users. Users enjoy seeing a change in display when they complete a task, however, abstraction is used to only show details of important tasks.</li><br>
+
+            </ul>
+
+            <h3>Overview of SOLID</h3>
+
+            <ul style="font-size: 14px;">
+
+                <br><li><b>Single-responsibility Principle </b>essentially covers the theory that every module, class, or function should only have one primary task to complete, therefore it should only have one singular reason to change. In this primary example, if people were assigned to their own class, the role of an accountant should be different than the role of a database administrator, therefore why each module should have its own individual responsibility. The term first originated from Robert C. Martin’s 2003 book titled, ‘The Principles of OOD’. Our calculator class’s role is to display results, while the operations have their own role of adding, subtracting, multiplying, dividing, etc.</li><br>
+
+                <li><b>Open-closed Principle </b>states that software entities such as classes, modules, and functions should be open for extension, but closed for modification. This is for the sole purpose to allow an entity’s behavior to be extended without the modification of its source code. This term first originated from Bertrand Meyer’s 1988 book called ‘Object Oriented Software Construction’.</li><br>
+
+                <li><b>Liskov Substitution Principle </b>states that any subclass object should be substitutable for the superclass object from which it is derived. The term was first introduced by Barbara Liskov in a 1988 conference titled ‘Data Abstraction and Hierarchy’.</li><br>
+
+                <li><b>Interface Segregation Principle </b>was defined by Robert C. Martin, which states that users or clients should be exposed to methods or options that they do not need. When creating an interface, users should only have access to important methods. This is primarily to prevent pollution to the interface which would later lead to a ‘bulky’ or ‘fat’ appearance in the interface.</li><br>
+
+                <li><b>Dependency Inversion Principle </b>essentially states that high-level modules should not import anything from low-level modules and that both should depend on abstractions. Similarly, abstractions should not depend on details, but details should depend on abstractions. In this example, our Calculator class is known as the high-level module, while the add, subtract, multiply, and divide operations are known as the low-level modules.</li><br>
+
+            </ul>
+
+            <h3>Design Patterns</h3>
+            <h5>Creational Patterns</h5>
+            <ul style="font-size: 14px;">
+
+                <br><li><b>Abstract Factory </b><br>Creates an instance of several families of classes.</li><br>
+
+                <li><b>Builder </b><br>Separates object construction from its representation.</li><br>
+
+                <li><b>Factory Method </b><br>Creates an instance of several derived classes.</li><br>
+
+                <li><b>Object Pool </b><br>Avoid expensive acquisition and release of resources by recycling objects that are no longer in use.</li><br>
+
+                <li><b>Prototype </b><br>A fully initialized instance to be copied or cloned.</li><br>
+
+                <li><b>Singleton </b><br>A class of which only a single instance can exist.</li><br>
+
+            </ul>
+
+            <h5>Structural Patterns</h5>
+
+            <ul style="font-size: 14px;">
+
+                <br><li><b>Adapter </b><br>Match interfaces of different classes.</li><br>
+
+                <li><b>Bridge </b><br>Separates an object's interface from its implementation.</li><br>
+
+                <li><b>Composite </b><br>A tree structure of simple and composite objects.</li><br>
+
+                <li><b>Decorator </b><br>Add responsibilities to objects dynamically.</li><br>
+
+                <li><b>Facade </b><br>A single class that represents an entire subsystem.</li><br>
+
+                <li><b>Flyweight </b><br>A fine-grained instance used for efficient sharing.</li><br>
+
+                <li><b>Private Class Data </b><br>Restricts accessor/mutator access.</li><br>
+
+                <li><b>Proxy </b><br>An object representing another object.</li><br>
+
+            </ul>
+
+            <h5>Behavioral Patterns</h5>
+
+            <ul style="font-size: 14px;">
+
+                <br><li><b>Chain of responsibility </b><br>A way of passing a request between a chain of objects.</li><br>
+
+                <li><b>Command </b><br>Encapsulate a command request as an object.</li><br>
+
+                <li><b>Interpreter </b><br>A way to include language elements in a program.</li><br>
+
+                <li><b>Iterator </b><br>Sequentially access the elements of a collection.</li><br>
+
+                <li><b>Mediator </b><br>Defines simplified communication between classes.</li><br>
+
+                <li><b>Memento </b><br>Capture and restore an object's internal state.</li><br>
+
+                <li><b>Null Object </b><br>Designed to act as a default value of an object.</li><br>
+
+                <li><b>Observer </b><br>A way of notifying change to a number of classes.</li><br>
+
+                <li><b>State </b><br>Alter an object's behavior when its state changes.</li><br>
+
+                <li><b>Strategy </b><br>Encapsulates an algorithm inside a class.</li><br>
+
+                <li><b>Template method </b><br>Defer the exact steps of an algorithm to a subclass.</li><br>
+
+                <li><b>Visitor </b><br>Defines a new operation to a class without change.</li><br>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+{% endblock %}
