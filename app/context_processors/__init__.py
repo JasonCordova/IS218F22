@@ -1,9 +1,10 @@
-"""These are reusable template function"""
 from os import getenv
 import datetime
+from app.auth.forms import login_form
 
 def utility_text_processors():
     message = "Jason Cordova [IS218-004]"
+    form = login_form()
 
     def deployment_environment():
         return getenv('FLASK_ENV', None)
@@ -18,6 +19,7 @@ def utility_text_processors():
         return f"{currency}{amount:.2f}"
 
     return dict(
+        form=form,
         mymessage=message,
         deployment_environment=deployment_environment(),
         year=current_year(),
