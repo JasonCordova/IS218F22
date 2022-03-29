@@ -8,7 +8,7 @@ pytest-pylint
 gunicorn
 uwsgi
 Jinja2
-Werkzeug
+Werkzeug~=2.0.0
 bootstrap-flask
 Flask-WTF
 flask_sqlalchemy
