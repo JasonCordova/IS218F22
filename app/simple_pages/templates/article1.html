@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div style="width: 100%; height: 300px; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; background: #6100ad; background: linear-gradient(154deg, #e800ff, #6100ad);
+    color: white; font-weight: 600; font-size: 42px; box-sizing: border-box;
+    padding: 32px; line-height: 46px;">
+
+        <div>Pylint Tool</div>
+        <div style="font-size: 36px; font-weight: 300;">& More</div>
+
+    </div>
+
+    <div class="container mt-5" style="font-size: 16px;">
+        <h2>What is Pylint?</h2>
+        <br>
+        <b>Pylint</b> is a tool primarily used in the Python programming language that checks for errors and tries to enforce a coding standard for looks. It can be utilized to search for certain error types, recommend suggestions about how particular code blocks should be refactored and offer details about your code's own complexity. It was developed in 2003 at Logilab and funded Sylvain Thénault to lead its development and until the 2015 project went under Python Code Quality Authority umbrella.
+        <br><br>
+
+        <figure class="figure d-block mx-auto">
+            <img src="../../static/images/pylint.png" class="figure-img img-fluid rounded d-block mx-auto" style="height: 256px;" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption text-center" style="font-size: 16px;">An example of Pylint being used to detect suggestions.</figcaption>
+        </figure>
+
+        <h3>Options & Switches</h3>
+        <ul>
+
+            <li>Persistent</li>
+            <li>Optimize-ast</li>
+            <li>Enable</li>
+            <li>Output-format</li>
+            <li>Reload-builtin</li>
+            <li>Spelling-dict</li>
+            <li>Generated-members</li>
+            <li>Broad-except</li>
+            <li>Int-import-graph</li>
+
+        </ul>
+
+        </div>
+
+    </div>
+
+{% endblock %}
