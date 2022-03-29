@@ -1,19 +1,19 @@
 import flask_login
-from flask import Flask
+from flask import Flask, render_template
 from app.context_processors import utility_text_processors
 from app.simple_pages import simple_pages
 
 import os
-from flask_login import (
-    UserMixin,
-    login_user,
-    LoginManager,
-    current_user,
-    logout_user,
-    login_required,
-)
+#from flask_login import (
+#    UserMixin,
+ #   login_user,
+  #  LoginManager,
+   # current_user,
+    #logout_user,
+    #login_required,
+#)
 
-login_manager = LoginManager()
+#login_manager = LoginManager()
 
 def page_not_found(e):
     return render_template("404.html"), 404
