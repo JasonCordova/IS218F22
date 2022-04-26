@@ -1,4 +1,0 @@
-[2022-04-20 00:59:52,774] 172.19.0.1 requested http://localhost/
-INFO in __init__: method: GET,  path: /,  status: 200,  duration: 0.03,  time: 2022-04-20T00:59:52Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 
-[2022-04-20 00:59:59,518] 172.19.0.1 requested http://localhost/pythonflask
-INFO in __init__: method: GET,  path: /pythonflask,  status: 200,  duration: 0.01,  time: 2022-04-20T00:59:59Z,  ip: 172.19.0.1,  host: localhost,  params: {}, 

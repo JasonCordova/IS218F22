@@ -9,6 +9,7 @@ from app import config
 db = SQLAlchemy()
 
 database = Blueprint('database', __name__,)
+error_handlers = Blueprint('error_handlers', __name__)
 
 @database.cli.command('create')
 def init_db():
