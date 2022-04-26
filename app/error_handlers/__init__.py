@@ -1,8 +1,36 @@
-from flask import render_template
-import flask
+import logging
+import os
 
-error_handlers = flask.Blueprint('error_handlers', __name__)
+from flask import Blueprint, cli
+from flask_sqlalchemy import SQLAlchemy
 
-@error_handlers.app_errorhandler(404)
-def page_not_found(e):
-    return render_template("404.html"), 404
+from app import config
+
+db = SQLAlchemy()
+
+database = Blueprint('database', __name__,)
+error_handlers = Blueprint('error_handlers', __name__)
+
+@database.cli.command('create')
+def init_db():
+    db.create_all()
+
+@database.before_app_first_request
+def create_db_file_if_does_not_exist():
+    root = config.Config.BASE_DIR
+    # set the name of the apps log folder to logs
+    dbdir = os.path.join(root,'..',config.Config.DB_DIR)
+    # make a directory if it doesn't exist
+    if not os.path.exists(dbdir):
+        os.mkdir(dbdir)
+    db.create_all()
+
+@database.before_app_first_request
+def create_upload_folder():
+    root = config.Config.BASE_DIR
+    # set the name of the apps log folder to logs
+    uploadfolder = os.path.join(root,'..',config.Config.UPLOAD_FOLDER)
+    # make a directory if it doesn't exist
+    if not os.path.exists(uploadfolder):
+        os.mkdir(uploadfolder)
+    db.create_all()

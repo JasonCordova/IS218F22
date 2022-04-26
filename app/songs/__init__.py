@@ -1,6 +1,7 @@
 import csv
 import logging
 import os
+import sys
 
 from flask import Blueprint, render_template, abort, url_for,current_app
 from flask_login import current_user, login_required
@@ -43,6 +44,9 @@ def songs_upload():
             for row in csv_file:
                 list_of_songs.append(Song(row['Name'],row['Artist']))
 
+        #if (current_user.is_authenticated):
+
+            #return "auth"
         current_user.songs = list_of_songs
         db.session.commit()
 
