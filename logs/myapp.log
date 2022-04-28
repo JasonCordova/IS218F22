@@ -5,3 +5,12 @@
 2022-04-28 14:20:32,308 [INFO] myApp: NOKEY
 2022-04-28 14:23:49,860 [INFO] myApp: NOKEY
 2022-04-28 14:24:17,744 [INFO] myApp: NOKEY
+2022-04-28 14:38:42,423 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-28 14:40:10,317 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-28 14:55:43,519 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-28 15:03:04,020 [INFO] myApp: "fakeemail@gmail.com" has successfully uploaded a CSV file () at 04/28/2022 - 15:03:04
+2022-04-28 15:03:43,712 [INFO] myApp: "fakeemail@gmail.com" has successfully uploaded a CSV file () at 04/28/2022 - 15:03:43
+2022-04-28 15:04:00,349 [INFO] myApp: "fakeemail@gmail.com" has successfully uploaded a CSV file (music.csv) at 04/28/2022 - 15:04:00
+2022-04-28 15:28:17,585 [INFO] myApp: NOKEY
+2022-04-28 15:35:56,245 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 04/28/2022 - 15:35:56
+2022-04-28 15:36:02,568 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 04/28/2022 - 15:36:02

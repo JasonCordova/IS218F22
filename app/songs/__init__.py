@@ -34,6 +34,7 @@ def songs_browse(page):
 @login_required
 def songs_upload():
     form = csv_upload()
+
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
         filename = secure_filename(form.file.data.filename)
