@@ -50,3 +50,11 @@
 2022-04-28 14:20:31,444 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:20:31] "GET /welcome HTTP/1.1" 200 -
 2022-04-28 14:20:32,332 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:20:32] "GET /locations/map HTTP/1.1" 200 -
 2022-04-28 14:20:32,434 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:20:32] "GET /api/locations/ HTTP/1.1" 200 -
+2022-04-28 14:23:49,925 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:23:49] "GET /locations/map HTTP/1.1" 200 -
+2022-04-28 14:23:50,074 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:23:50] "GET /api/locations/ HTTP/1.1" 200 -
+2022-04-28 14:23:50,817 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:23:50] "GET /songs HTTP/1.1" 200 -
+2022-04-28 14:24:16,898 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:24:16] "GET /songs HTTP/1.1" 200 -
+2022-04-28 14:24:17,773 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:24:17] "GET /locations/map HTTP/1.1" 200 -
+2022-04-28 14:24:17,905 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:24:17] "GET /api/locations/ HTTP/1.1" 200 -
+2022-04-28 14:24:18,400 [INFO] werkzeug: 172.19.0.1 - - [28/Apr/2022 14:24:18] "GET /about HTTP/1.1" 200 -
+2022-04-28 14:27:00,498 [INFO] werkzeug:  * Detected change in '/home/myuser/app/db/models/__init__.py', reloading
