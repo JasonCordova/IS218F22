@@ -2,10 +2,13 @@ import csv
 import logging
 import os
 import sys
+import datetime
+import time
 
 from flask import Blueprint, render_template, abort, url_for,current_app
 from flask_login import current_user, login_required
 from jinja2 import TemplateNotFound
+from rfc3339 import rfc3339
 
 from app.db import db
 from app.db.models import Song
@@ -33,8 +36,11 @@ def songs_upload():
     form = csv_upload()
     if form.validate_on_submit():
         log = logging.getLogger("myApp")
-
         filename = secure_filename(form.file.data.filename)
+
+        # Logging info for when a user successfully uploads a CSV file.
+        log.info("\"%s\" has successfully uploaded a CSV file (%s) at %s", current_user.email, filename, datetime.datetime.now().strftime('%m/%d/%Y - %H:%M:%S'))
+
         filepath = os.path.join(current_app.config['UPLOAD_FOLDER'], filename)
         form.file.data.save(filepath)
         #user = current_user
