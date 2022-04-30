@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container mt-5">
+        <h2>Docker: Explanation</h2>
+        <br>
+        <div class="container">
+
+            <h3>Containers</h3>
+            <div style="font-size: 14px;">Docker specializes in allowing users to package their code and applications into standard units called containers. Containers are executable components that combine source code and any dependencies to produce a reliable and time-efficient application that can run from one environment to another. Through the use of containers, certain applications that may only work on one operating system may work on others without the use of a virtual machine as well.</div>
+
+            <br>
+
+            <h3>Images</h3>
+            <div style="font-size: 14px;">Containers run through a specific set of instructions otherwise known as images. Images are automatically generated when a Docker container is established, which produces an immutable (read-only) file of steps required to execute an application on Docker. One user can make an image for the purpose of one project and re-use it for another (and even on another machine), saving an immense amount of time on troubleshooting. Images are known as the “snapshot images” of a Docker container and contain all the dependencies required to run the application.</div>
+
+            <br>
+
+            <h3>Link to Project Repository</h3>
+            <div style="font-size: 14px;"><a href="https://hub.docker.com/repository/docker/jasoncordova/jlc23">Current Docker Repository</a></div>
+
+            <br>
+
+            <h3>Docker Commands</h3>
+            <div style="font-size: 14px;">
+
+                <ul>
+
+                    <li><b>'docker --version' </b>shows the current version of Docker</li>
+                    <li><b>'docker pull' </b>pulls images from a Docker repository</li>
+                    <li><b>'docker run' </b>creates a container from an image</li>
+                    <li><b>'docker exec' </b>accesses the running container</li>
+                    <li><b>'docker ps' </b>displays all running containers on Docker</li>
+                    <li><b>'docker ps -a' </b>displays all active/running containers and exited ones</li>
+                    <li><b>'docker build' </b>creates an image from </li>
+                    <li><b>'docker stop' </b>stops running the container</li>
+                    <li><b>'docker kill' </b>stops execution and kills the container</li>
+                    <li><b>'docker commit' </b>creates new image of container</li>
+                    <li><b>'docker rm' </b>deletes a stopped container</li>
+                    <li><b>'docker login' </b>shows login prompt to Docker</li>
+                    <li><b>'docker images' </b>shows all Docker images stored locally</li>
+
+                </ul>
+
+            </div>
+
+            <br>
+
+            <h3>Starting Project Using Terminal</h3>
+            <div style="font-size: 14px;">
+
+                1. Open your terminal (cmd, PowerShell, Linux terminal)
+                <br>
+                2. Using the 'cd' command, change the directory to where the project is stored or where you'd like to store it.
+                <br>
+                3. If no project exists at this time, use the 'git clone' command or 'docker pull' command to retrieve the project.
+                <br>
+                4. Use the 'docker build -t' function to build the project on Docker.
+                <br>
+                5. After building the project, you can set the port using 'docker run -dp 3000:3000'.
+                <br>
+                6. Once set, you can successfully use the 'docker -it sh' command to run commands in the container.
+
+
+            </div>
+
+            <br>
+
+            <h3>Accessing Container Using Terminal</h3>
+
+            <div style="font-size: 14px;">
+
+                1. Open your terminal (cmd, PowerShell, Linux terminal)
+                <br>
+                2. Using the 'docker ps -a' command, retrieve and copy the container id of the image you want to access.
+                <br>
+                3. Run 'docker exec -it <container_id> bash', replacing container_id with the copied container id.
+
+            </div>
+
+            <br>
+
+        </div>
+    </div>
+{% endblock %}

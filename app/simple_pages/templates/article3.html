@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div style="width: 100%; height: 300px; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; background: #008eff; background: linear-gradient(154deg, #008eff, blue);
+    color: white; font-weight: 300; font-size: 36px; box-sizing: border-box;
+    padding: 32px; line-height: 46px;">
+
+        <div>Object-Oriented</div>
+        <div style="font-size: 42px; font-weight: 600;">Programming</div>
+
+    </div>
+
+    <div class="container mt-5" style="font-size: 16px;">
+
+        <i>Object-oriented programming  is a computer programming model that organizes software design around data, or objects, rather than functions and logic. An object can be defined as a data field that has unique attributes and behavior.</i>
+
+        <br><br>
+
+        <h3>Glossary</h3>
+
+                <ul style="font-size: 14px;">
+
+                    <br><li><b>Instantiation </b>is the process of calling a constructor (blueprint) of a class in order to create an instance of that class, otherwise known as an object.</li><br>
+
+                    <li><b>Objects </b>are instances or members of a class, which pass through a variety of fields such as identity, behavior, states, methods, and attributes. An example of an object could be a car, which could have different variables such as manufacturer, color, speed and methods such as drive and brake.</li><br>
+
+                    <li><b>Classes </b>are user-defined ‘templates’ or ‘blueprints’ that can be used to create objects and define object data types and methods, as well as any other content of the object that belongs to it.</li><br>
+
+                    <li><b>Namespaces </b>are declared regions that provide a method to prevent naming conflicts in projects. Any symbol or variable declared in a namespace block is first placed in a named scope that further prevents them from being mistaken for identical variables in other scopes.</li><br>
+
+                    <li><b>Constructors </b>are special methods in classes that are used to initialize objects and can be used to set values in object attributes. Constructors are also usually called when an object or an instance of a class is created.</li><br>
+
+                    <li><b>Fixtures </b>are functions which run before each and every test function that it is applied to. In Pytest, they define the steps and data that constitute the arrange phase of a test and set up a set of resources beforehand.</li><br>
+
+                    <li><b>Type hints </b>are a form of code that is typically used to specify the datatype of a value. Primarily for documentation purposes, they are used to catch errors in functions, constructors, and much more.</li><br>
+
+                    <li><b>Type casting </b>is the process of changing or converting one primitive data type to another data type.</li><br>
+
+                    <li><b>Unit tests </b>are testing methods in software in which individual units of code undergo a variety of different requests and tests to determine whether they are functional and efficient.</li><br>
+
+                    <li><b>Static </b>is a keyword typically used on variables, methods, blocks, and classes in order to make that particular member belong to a type itself, rather than an instance of its type.</li><br>
+
+                    <li><b>Instance methods </b>are methods that belong to instances of a class, not the class overall. They require an object to be created before it can be called.</li><br>
+
+                    <li><b>Instance properties </b>otherwise known as instance variables, are used by objects to store their states and other values. These would typically go outside any methods or functions in an object.</li><br>
+
+                    <li><b>Static methods </b>are a form of methods that can be accessed before any objects of its class are created, an example of this is the main( ) method in C++ and Java programs.</li><br>
+
+                    <li><b>Static properties </b>act more like a global variable or function in the sense that they can be called in any and every scope.</li><br>
+
+                    <li><b>Encapsulation </b>is the process in which code, methods, and data are wrapped together in a single unit. This happens when making an instance of a class.</li><br>
+
+                        <figure class="figure d-block mx-auto">
+                            <img src="../../static/images/encap.png" class="figure-img img-fluid rounded d-block mx-auto" style="height: 360px;" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption text-center" style="font-size: 16px;">An example of encapsulation in our calculator code.</figcaption>
+                        </figure>
+
+                    <li><b>Inheritance </b>is the concept in which one class can inherit or acquire the properties, values, and methods from another class.</li><br>
+
+                        <figure class="figure d-block mx-auto">
+                            <img src="../../static/images/inheritance.png" class="figure-img img-fluid rounded d-block mx-auto" style="height: 360px;" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption text-center" style="font-size: 16px;">An example of inheritance in our calculator code.</figcaption>
+                        </figure>
+
+                    <li><b>Polymorphism </b>occurs when classes are related to each other by inheritance, it allows us to perform actions in different ways through overloading and overriding functions. An example would be an animal class having the function eat(), which would pass through every kind of animal.</li><br>
+
+                        <figure class="figure d-block mx-auto">
+                            <img src="../../static/images/polymorphism.png" class="figure-img img-fluid rounded d-block mx-auto" style="height: 420px;" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption text-center" style="font-size: 16px;">An example of polymorphism in our calculator code.</figcaption>
+                        </figure>
+
+                    <li><b>Abstraction </b>is the process of hiding unnecessary details from the user and only showing the necessary characteristics to users. Users enjoy seeing a change in display when they complete a task, however, abstraction is used to only show details of important tasks.</li><br>
+
+                        <figure class="figure d-block mx-auto">
+                            <img src="../../static/images/abstract.png" class="figure-img img-fluid rounded d-block mx-auto" style="height: 142px;" alt="A generic square placeholder image with rounded corners in a figure.">
+                            <figcaption class="figure-caption text-center" style="font-size: 16px;">An example of abstraction in our calculator code.</figcaption>
+                        </figure>
+
+                </ul>
+
+    </div>
+    <br>
+
+{% endblock %}
