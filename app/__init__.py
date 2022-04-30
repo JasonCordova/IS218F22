@@ -24,10 +24,6 @@ from flask_cors import CORS
 login_manager = flask_login.LoginManager()
 
 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-
 def create_app():
     """Create and configure an instance of the Flask application."""
     app = Flask(__name__)
@@ -60,6 +56,7 @@ def create_app():
     # add command function to cli commands
     app.cli.add_command(create_database)
     db.init_app(app)
+    db.create_all()
     api_v1_cors_config = {
     "methods": ["OPTIONS", "GET", "POST"],
     }
