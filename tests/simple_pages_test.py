@@ -12,7 +12,7 @@ def test_request_main_menu_links(client):
 
 def test_request_index(client):
     """This gets the index page"""
-    response = client.get("/")
+    response = client.get("")
     assert response.status_code == 200
 
 def test_request_about(client):
