@@ -56,7 +56,6 @@ def create_app():
     # add command function to cli commands
     app.cli.add_command(create_database)
     db.init_app(app)
-    db.create_all()
     api_v1_cors_config = {
     "methods": ["OPTIONS", "GET", "POST"],
     }
