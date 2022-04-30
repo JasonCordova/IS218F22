@@ -1,0 +1,45 @@
+2022-04-29 02:20:02,311 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 04/29/2022 - 02:20:02
+2022-04-29 02:34:16,433 [INFO] myApp: NOKEY
+2022-04-29 02:37:05,570 [INFO] myApp: NOKEY
+2022-04-29 02:37:10,296 [INFO] myApp: NOKEY
+2022-04-29 02:37:32,651 [INFO] myApp: NOKEY
+2022-04-29 02:37:46,147 [INFO] myApp: NOKEY
+2022-04-29 02:38:18,607 [INFO] myApp: NOKEY
+2022-04-29 02:39:13,561 [INFO] myApp: NOKEY
+2022-04-29 20:00:28,944 [INFO] myApp: NOKEY
+2022-04-29 20:01:37,464 [INFO] myApp: NOKEY
+2022-04-29 20:57:58,012 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-29 20:58:51,547 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-29 22:54:54,010 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-29 23:15:42,489 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-29 23:25:01,645 [INFO] myApp: keith@webizly.com testtest
+2022-04-29 23:25:20,829 [INFO] myApp: test@gmail.com testtest
+2022-04-30 00:46:21,937 [INFO] myApp: <app.auth.forms.login_form object at 0x7f0cae723d30>
+2022-04-30 01:05:05,024 [INFO] myApp: /login
+2022-04-30 01:05:15,709 [INFO] myApp: BRO: /login
+2022-04-30 01:11:01,625 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:15:29,574 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:17:39,185 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:18:24,268 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:18:48,894 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:20:47,518 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:24:54,321 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:25:22,382 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:25:34,650 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:25:44,874 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:30:01,077 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:35:40,156 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:36:35,741 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:41:47,279 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 01:44:45,233 [INFO] myApp: <app.auth.forms.login_form object at 0x7fa32160d190>
+2022-04-30 02:28:09,863 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 02:33:13,499 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 02:34:23,757 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 02:34:34,099 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 02:37:30,868 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 02:53:32,802 [INFO] myApp: <app.auth.forms.login_form object at 0x7f1e8d581610>
+2022-04-30 02:57:31,440 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 04/30/2022 - 02:57:31
+2022-04-30 02:57:59,062 [INFO] myApp: <app.auth.forms.login_form object at 0x7f6244092130>
+2022-04-30 02:58:21,493 [INFO] myApp: <app.auth.forms.login_form object at 0x7f623f60f550>
+2022-04-30 03:01:42,352 [INFO] myApp: <User 'keith@webizly.com'>
+2022-04-30 03:23:15,604 [INFO] myApp: <User 'keith@webizly.com'>
