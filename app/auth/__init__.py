@@ -39,10 +39,13 @@ def register():
 @auth.route('/login', methods=['POST', 'GET'])
 def login():
     form = login_form()
+
     if current_user.is_authenticated:
         return redirect(url_for('auth.dashboard'))
     if form.validate_on_submit():
         user = User.query.filter_by(email=form.email.data).first()
+        log = logging.getLogger("myApp")
+        log.info(form)
         if user is None or not user.check_password(form.password.data):
             flash('Invalid username or password')
             return redirect(url_for('auth.login'))
@@ -61,8 +64,7 @@ def login():
 def dashboard(page):
     page = page
     per_page = 1000
-    #pagination = Location.query.filter_by(users=current_user.id).paginate(page, per_page, error_out=False)
-    #pagination = Location.query.all(users=current_user.id).paginate(page, per_page, error_out=False)
+    #pagination = Song.query.all(users=current_user.id).paginate(page, per_page, error_out=False)
 
     #pagination = db.session.query(Location, User).filter(location_user.location_id == Location.id,
             #                                   location_user.user_id == User.id).order_by(Location.location_id).all()

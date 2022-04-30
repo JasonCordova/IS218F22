@@ -6,7 +6,23 @@
 <div class="row col-8">
     {% block title %}Welcome: {{ current_user.email }}{% endblock %}
     {% block content %}
-        <h2>Welcome: {{ current_user.email }}</h2>
+
+        <div style="display: block;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #000dff, #0087ff);
+    color: white;
+    padding: 0px 108px;
+    box-sizing: content-box;
+    margin-left: -108px;">
+
+            <h2 style="text-align: center; font-size: 16px; text-align: center; text-transform: uppercase;">Welcome to your dashboard,</h2>
+            <div style="font-size: 32px; font-weight: 600;">{{ current_user.email }}</div>
+        </div>
         {{ render_table(data) }}
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -32,7 +48,7 @@
             });
         </script>
 
-
+<b style="text-align: center">There is no MAP or LOCATIONS included since Professor said it was optional for Project 3.</b>
 
     {% endblock %}
 </div>

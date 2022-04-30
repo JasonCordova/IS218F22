@@ -4,7 +4,9 @@
         <article class="col-8 lh-lg fs-5">
 
             <h1>Index Page</h1>
-            {{ lipsum (n=5, html=True, min=20, max=100) }}
+            Welcome, my name is Jason Cordova and this is my project for IS218.
+            <br>Login to see more features.
+            <br><br><b>There is no MAP or LOCATIONS/EMAILS included since Professor said it was optional for Project 3.</b>
         </article>
         {% if current_user.is_authenticated == false %}
             <aside class="col-4">
