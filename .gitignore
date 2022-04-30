@@ -6,7 +6,3 @@
 __pycache__
 .coverage
 .bash_history
-.env
-database
-logs!/app/.env
-!/.env.test
