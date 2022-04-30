@@ -55,6 +55,8 @@ class Location(db.Model, SerializerMixin):
         }
 
 
+
+
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
@@ -65,14 +67,17 @@ class User(UserMixin, db.Model):
     registered_on = db.Column('registered_on', db.DateTime)
     active = db.Column('is_active', db.Boolean(), nullable=False, server_default='1')
     is_admin = db.Column('is_admin', db.Boolean(), nullable=False, server_default='0')
-    songs = db.relationship("Song", back_populates="user", cascade="all, delete")
+    #songs = db.relationship("Song", back_populates="user", cascade="all, delete")
     locations = db.relationship("Location",
                     secondary=location_user, backref="users")
+    songs = db.relationship("Song",
+                    secondary=song_user, backref="users")
 
-    def __init__(self, email, password):
+    def __init__(self, email, password, is_admin):
         self.email = email
         self.password = password
         self.registered_on = datetime.utcnow()
+        self.is_admin = is_admin
 
     def is_authenticated(self):
         return True
