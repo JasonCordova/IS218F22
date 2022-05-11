@@ -11,7 +11,6 @@ def test_request_main_menu_links(client):
     assert b'href="/login"' in response.data
     assert b'href="/register"' in response.data
 
-
 def test_auth_pages(client):
     """This makes the index page"""
     response = client.get("/dashboard")
