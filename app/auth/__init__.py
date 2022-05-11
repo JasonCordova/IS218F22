@@ -62,16 +62,8 @@ def login():
 @auth.route('/dashboard/<int:page>', methods=['GET'])
 @login_required
 def dashboard(page):
-    page = page
-    per_page = 1000
-    #pagination = Song.query.all(users=current_user.id).paginate(page, per_page, error_out=False)
 
-    #pagination = db.session.query(Location, User).filter(location_user.location_id == Location.id,
-            #                                   location_user.user_id == User.id).order_by(Location.location_id).all()
-
-    #pagination = User.query.join(location_user).filter(location_user.user_id == current_user.id).paginate()
-
-    data = Location.query.all()
+    data = current_user.songs
 
     try:
         return render_template('dashboard.html',data=data)

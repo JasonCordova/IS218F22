@@ -11,3 +11,8 @@ WHERE records.user_id = ?
 2022-05-11 16:00:09,840 [INFO] myApp: <User 'keith@webizly.com'>
 2022-05-11 16:04:53,962 [INFO] myApp: <User 'keith@webizly.com'>
 2022-05-11 16:15:53,450 [INFO] myApp: <User 'keith@webizly.com'>
+2022-05-11 21:24:09,982 [INFO] myApp: <app.auth.forms.login_form object at 0x7fce396edc10>
+2022-05-11 21:24:26,491 [INFO] myApp: <app.auth.forms.login_form object at 0x7fce396eda60>
+2022-05-11 21:24:33,059 [INFO] myApp: <app.auth.forms.login_form object at 0x7fce395fc670>
+2022-05-11 21:24:42,808 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 05/11/2022 - 21:24:42
+2022-05-11 21:25:58,966 [INFO] myApp: "testtest@gmail.com" has successfully uploaded a CSV file (music.csv) at 05/11/2022 - 21:25:58
