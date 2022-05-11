@@ -28,6 +28,7 @@ def test_upload_record(application):
             form.file = record
             assert form.validate
 
+
 def test_upload_record_failed(client, application):
 
     with application.app_context():
